@@ -58,4 +58,4 @@ form.addEventListener("submit", (event) => {
     });
 });
 
-// nb a god date to test an undefined apod hdurl response is 06/06/23 and 31/05/2023
+// nb a good date to test an undefined apod hdurl response is 06/06/23 and 31/05/2023
