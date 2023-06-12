@@ -10,6 +10,9 @@ form.addEventListener("submit", (event) => {
   const dateInput = document.getElementById("date").value;
   const apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${dateInput}`;
 
+  // Show loading wheel
+  apodDisplayElement.src = "https://upload.wikimedia.org/wikipedia/commons/5/53/Loading-red-spot.gif";
+
   fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => {
